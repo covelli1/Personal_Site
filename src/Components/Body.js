@@ -15,7 +15,7 @@ function Body() {
                 </div>
 
                 <div className="flex text-center justify-center  pb-7">
-                    <img src="./Public_Site/bitmoji_edit.png"  width={300} height={300}></img> 
+                    <img src="./bitmoji_edit.png"  width={300} height={300}></img> 
                 </div>
 
                 <div className="flex text-center justify-center font-mono text-3xl pb-7">
