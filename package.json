@@ -1,7 +1,7 @@
 {
   "name": "personal_web",
   "version": "0.1.0",
-  "homepage": "https://gitname.github.io/Personal_Site",
+  "homepage": " http://www.vincenguyen.dev/",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.2",
