@@ -8,7 +8,7 @@ import Footer from './Components/Footer';
 
 function App() {
   return (
-    <div className="bg-back-pattern h-screen bg-fit">
+    <div className="bg-back-pattern h-screen bg-cover">
       <Header/>
       <Body/>
     </div>
