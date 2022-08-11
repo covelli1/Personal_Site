@@ -33,7 +33,7 @@ function Body() {
                     Currently at Kingston Technology {emoji.getUnicode("floppy_disk")}{emoji.getUnicode("space_invader")}
                 </div>
 
-                <div className="flex text-center justify-center font-mono">
+                <div className="flex text-center justify-center font-mono pb-8">
                     <a href="https://www.linkedin.com/in/vincentvannguyen/" target="_blank" class="mr-5  font-mono border-2 border-black hover:text-white hover:bg-black p-3">CONNECT WITH ME</a>
                 </div>
             </div>
