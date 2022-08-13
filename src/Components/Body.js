@@ -26,7 +26,7 @@ function Body() {
                 
 
                 <div className="flex text-center justify-center font-mono font-extrabold text-5xl pb-7 w-2/5"> 
-                    Continously learning and bulding software.
+                    Continously learning and building software.
                 </div>
 
                 <div className="flex text-center justify-center font-mono text-2xl pb-8 max-w-3xl"> 
