@@ -54,8 +54,6 @@ function App() {
   }
 
 
-  
-
   return (
     <div className={`${season_back} flex flex-col min-h-screen bg-cover`}>
       <Header/>
