@@ -1,2 +1,1 @@
-### Hi I'm Vincent
-
+### Hi I'm Vincent. This is my personal site.
