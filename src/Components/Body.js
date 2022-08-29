@@ -14,7 +14,7 @@ function Body(props) {
 
 
     return (
-        <div className="pt-20">
+        <div className="pt-20 overflow-hidden">
 
             <div className="flex flex-col items-center">
                 <div className="flex text-center justify-center font-mono text-3xl pb-7 font-semibold animate__animated animate__zoomIn animate__delay-1s">

@@ -9,7 +9,7 @@ import 'animate.css';
 function Header() {
     return(
         <header className="">
-        <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+        <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center overflow-hidden">
             <div className="hover:bg-orange-300 p-3 animate__animated animate__fadeInLeft">
                 <FontAwesomeIcon icon={faEnvelope} className=""/>
                 <a href="mailto:vincent.nguyen3325@gmail.com" className="mr-5  pl-3 font-mono text-xl font-semibold">VINCENT.NGUYEN3325@GMAIL.COM</a>
