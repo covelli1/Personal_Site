@@ -53,7 +53,7 @@ function App() {
 
 
   return (
-    <div className={`${season_back} flex flex-col min-h-screen bg-cover over flow-x-hidden`}>
+    <div className={`${season_back} flex flex-col min-h-screen bg-cover overflow-x-hidden`}>
       <Header/>
       <Body greeting = {greeting}/>
     </div>
