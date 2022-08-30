@@ -18,7 +18,6 @@ function App() {
 
   const current = new Date();
   let month = current.getMonth() + 1
-  month = 12
  
 
   let season = null
@@ -54,7 +53,7 @@ function App() {
 
 
   return (
-    <div className={`${season_back} flex flex-col min-h-screen bg-cover`}>
+    <div className={`${season_back} flex flex-col min-h-screen bg-cover over flow-x-hidden`}>
       <Header/>
       <Body greeting = {greeting}/>
     </div>
