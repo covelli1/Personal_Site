@@ -18,6 +18,7 @@ function App() {
 
   const current = new Date();
   let month = current.getMonth() + 1
+  month = 12
  
 
   let season = null
