@@ -78,18 +78,20 @@ function Body(props) {
                 <section className="text-gray-600 body-font">
                     <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
                         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 animate__animated animate__fadeInLeft animate__delay-5s">
-                            <a href="https://weather-46xoqxo2y-covelli1.vercel.app/" target="_blank">
+                            <a href="https://league-app-inky.vercel.app/" target="_blank">
                                 <img class="object-cover object-center rounded" alt="hero" src="./weather_app.png"/>
                             </a>
                         </div>
                         <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center animate__animated animate__fadeInRight animate__delay-5s">
                             <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 hover:bg-violet-300 p-3">
-                                <a href="https://weather-46xoqxo2y-covelli1.vercel.app/" target="_blank">
+                                <a href="https://league-app-inky.vercel.app/" target="_blank">
                                     LEAGUE APP
                                 </a>
                             </h1>
                             <p className="mb-8 leading-relaxed">
-                                ● Designed a simple React app which allows users to search for the weather status in a certain city/country
+                                ● Created a webapp that allows users to check their League of Legends staticstics
+                                <br/>
+                                ● This was a fun project because I actually enjoy the game
                                 
                             </p>
                             
@@ -100,12 +102,12 @@ function Body(props) {
 
                 <section className="text-gray-600 body-font">
                     <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-                        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+                        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 animate__animated animate__fadeInLeft animate__delay-6s">
                             <a href="https://weather-46xoqxo2y-covelli1.vercel.app/" target="_blank">
                                 <img class="object-cover object-center rounded" alt="hero" src="./weather_app.png"/>
                             </a>
                         </div>
-                        <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
+                        <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center animate__animated animate__fadeInRight animate__delay-6s">
                             <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900 hover:bg-blue-300 p-3">
                                 <a href="https://weather-46xoqxo2y-covelli1.vercel.app/" target="_blank">
                                     WEATHER APP
