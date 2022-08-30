@@ -26,14 +26,12 @@ function App() {
   let greeting = null;
 
   for(var key in seasons) {
-    console.log(month)
-    console.log(seasons[key])
+
     if(seasons[key].includes(month)) {
       season = key
     }
   }
 
-  console.log(season)
 
   if(season === "spring") {
     season_back = "bg-spring-pattern"
