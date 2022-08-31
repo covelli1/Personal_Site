@@ -79,7 +79,7 @@ function Body(props) {
                     <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center bg-amber-50 shadow-2xl rounded-md bg-opacity-70">
                         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 animate__animated animate__fadeInLeft animate__delay-4s">
                             <a href="https://league-app-inky.vercel.app/" target="_blank">
-                                <img class="object-cover object-center rounded" alt="hero" src="./weather_app.png"/>
+                                <img class="object-cover object-center rounded" alt="hero" src="./league_app.png"/>
                             </a>
                         </div>
                         <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center animate__animated animate__fadeInRight animate__delay-4s">
