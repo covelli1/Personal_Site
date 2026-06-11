@@ -10,8 +10,8 @@ const facts = [
 
 export default function About() {
   return (
-    <section className="min-h-screen flex items-center px-6 py-24">
-      <div className="max-w-6xl mx-auto w-full">
+    <section className="px-6 py-24">
+      <div className="max-w-7xl mx-auto w-full">
         <SectionHeading>About</SectionHeading>
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div className="flex flex-col gap-5">

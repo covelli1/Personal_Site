@@ -3,8 +3,8 @@ import { experience } from '../data';
 
 export default function Experience() {
   return (
-    <section className="min-h-screen flex items-center px-6 py-24">
-      <div className="max-w-6xl mx-auto w-full">
+    <section className="px-6 py-24">
+      <div className="max-w-7xl mx-auto w-full">
         <SectionHeading>Experience</SectionHeading>
         <div className="flex flex-col gap-6">
           {experience.map((job, i) => (
