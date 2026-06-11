@@ -86,7 +86,7 @@ function Body() {
       <section id="home" className="min-h-screen flex items-center justify-center px-6">
         <div className="text-center max-w-3xl mx-auto">
           <p className="text-teal-400 font-semibold text-lg tracking-widest uppercase mb-4">
-            Software Engineer
+            Full Stack Software Engineer
           </p>
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
             <span className="bg-gradient-to-r from-teal-400 via-cyan-300 to-blue-400 bg-clip-text text-transparent">
@@ -94,7 +94,7 @@ function Body() {
             </span>
           </h1>
           <p className="text-gray-400 text-lg md:text-xl mb-10 max-w-xl mx-auto">
-            Building tools that make a difference — Python, TypeScript, React
+            Building tools that make a difference
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
