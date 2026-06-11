@@ -1,0 +1,38 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
+
+export default function Home() {
+  return (
+    <section className="min-h-screen flex items-center justify-center px-6">
+      <div className="text-center max-w-3xl mx-auto">
+        <p className="text-teal-400 font-semibold text-lg tracking-widest uppercase mb-4">
+          Full Stack Software Engineer
+        </p>
+        <h1 className="text-5xl md:text-7xl font-bold mb-6">
+          <span className="bg-gradient-to-r from-teal-400 via-cyan-300 to-blue-400 bg-clip-text text-transparent">
+            Vincent Nguyen
+          </span>
+        </h1>
+        <p className="text-gray-400 text-lg md:text-xl mb-10 max-w-xl mx-auto">
+          Building tools that make a difference
+        </p>
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <a
+            href="/projects"
+            className="bg-teal-400 hover:bg-teal-300 text-navy font-semibold px-8 py-3 rounded transition-colors duration-200"
+          >
+            View Projects →
+          </a>
+          <a
+            href="/Vincent_Resume_2026.pdf"
+            target="_blank"
+            rel="noreferrer"
+            className="border border-white/30 hover:border-teal-400 hover:text-teal-400 text-white font-semibold px-8 py-3 rounded transition-colors duration-200"
+          >
+            Download Resume <FontAwesomeIcon icon={faDownload} className="ml-1" />
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}

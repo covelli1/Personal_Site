@@ -1,15 +1,20 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 
 const navLinks = [
-  { label: 'Home',       href: '#home' },
-  { label: 'About',      href: '#about' },
-  { label: 'Skills',     href: '#skills' },
-  { label: 'Experience', href: '#experience' },
-  { label: 'Projects',   href: '#projects' },
+  { label: 'Home',       to: '/' },
+  { label: 'About',      to: '/about' },
+  { label: 'Skills',     to: '/skills' },
+  { label: 'Experience', to: '/experience' },
+  { label: 'Projects',   to: '/projects' },
 ];
 
+const linkClass = ({ isActive }) =>
+  `text-sm font-medium transition-colors duration-200 ${
+    isActive ? 'text-teal-400' : 'text-gray-300 hover:text-teal-400'
+  }`;
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -18,23 +23,19 @@ function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-navy/80 backdrop-blur-sm border-b border-white/10">
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center gap-10">
 
-        <a href="#home">
+        <NavLink to="/">
           <img
-            src={`${import.meta.env.BASE_URL}personal-icon.png`}
+            src="/personal-icon.png"
             alt="Vincent Nguyen"
             className="w-10 h-10 rounded-full object-cover shrink-0"
           />
-        </a>
+        </NavLink>
 
         <nav className="hidden md:flex items-center gap-8">
           {navLinks.map(link => (
-            <a
-              key={link.label}
-              href={link.href}
-              className="text-gray-300 hover:text-teal-400 transition-colors duration-200 text-sm font-medium"
-            >
+            <NavLink key={link.label} to={link.to} className={linkClass} end={link.to === '/'}>
               {link.label}
-            </a>
+            </NavLink>
           ))}
         </nav>
 
@@ -58,14 +59,15 @@ function Header() {
       {menuOpen && (
         <div className="md:hidden bg-navy-light border-t border-white/10 px-6 py-4 flex flex-col gap-4">
           {navLinks.map(link => (
-            <a
+            <NavLink
               key={link.label}
-              href={link.href}
-              className="text-gray-300 hover:text-teal-400 transition-colors font-medium"
+              to={link.to}
+              className={linkClass}
+              end={link.to === '/'}
               onClick={() => setMenuOpen(false)}
             >
               {link.label}
-            </a>
+            </NavLink>
           ))}
           <a
             href="mailto:vincent.nguyen3325@gmail.com"

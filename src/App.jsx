@@ -1,18 +1,33 @@
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './Components/Header';
-import Body from './Components/Body';
 import Footer from './Components/Footer';
 import ParticleBackground from './Components/ParticleBackground';
+import Home from './pages/Home';
+import About from './pages/About';
+import Skills from './pages/Skills';
+import Experience from './pages/Experience';
+import Projects from './pages/Projects';
 
 function App() {
   return (
-    <div className="min-h-screen bg-navy text-white overflow-x-hidden">
-      <ParticleBackground />
-      <div className="relative z-10 flex flex-col min-h-screen">
-        <Header />
-        <Body />
-        <Footer />
+    <BrowserRouter>
+      <div className="min-h-screen bg-navy text-white overflow-x-hidden">
+        <ParticleBackground />
+        <div className="relative z-10 flex flex-col min-h-screen">
+          <Header />
+          <main className="flex-1">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/skills" element={<Skills />} />
+              <Route path="/experience" element={<Experience />} />
+              <Route path="/projects" element={<Projects />} />
+            </Routes>
+          </main>
+          <Footer />
+        </div>
       </div>
-    </div>
+    </BrowserRouter>
   );
 }
 
