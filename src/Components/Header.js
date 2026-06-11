@@ -12,13 +12,13 @@ function Header() {
         <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center overflow-hidden">
             <div className="hover:bg-orange-300 p-3 animate__animated animate__fadeInLeft">
                 <FontAwesomeIcon icon={faEnvelope} className=""/>
-                <a href="mailto:vincent.nguyen3325@gmail.com" className="mr-5  pl-3 font-mono text-xl font-semibold">VINCENT.NGUYEN3325@GMAIL.COM</a>
+                <a href="mailto:vincent.nguyen3325@gmail.com" className="mr-5  pl-3 font-mono text-xl font-semibold">vincent.nguyen3325@gmail.com</a>
             </div>
-            
+
             <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center animate__animated animate__fadeInRight">
                 <a href="https://www.linkedin.com/in/vincentvannguyen/" target="_blank" className="mr-5 font-semibold hover:text-gray-900 font-mono hover:bg-green-300 p-3 text-xl">LINKEDIN</a>
                 <a href="https://github.com/covelli1" target="_blank" className="mr-5 font-semibold hover:text-gray-900 font-mono hover:bg-amber-300 p-3 text-xl">GITHUB</a>
-
+                <a href="/Vincent_Resume_2026.pdf" target="_blank" className="mr-5 font-semibold hover:text-gray-900 font-mono hover:bg-blue-300 p-3 text-xl">RESUME</a>
             </nav>
             
         </div>

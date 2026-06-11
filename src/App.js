@@ -35,19 +35,19 @@ function App() {
 
   if(season === "spring") {
     season_back = "bg-spring-pattern"
-    greeting = "HOPE YOU\'RE HAVING A GREAT SPRING!"
+    greeting = "Hope you're having a great spring!"
 
   } else if (season === "summer") {
     season_back = "bg-summer-pattern"
-    greeting = "HOPE YOU\'RE HAVING A GREAT SUMMER!"
+    greeting = "Hope you're having a great summer!"
 
   } else if (season === "winter") {
     season_back = "bg-winter-pattern"
-    greeting = "HOPE YOU\'RE HAVING A GREAT WINTER!"
+    greeting = "Hope you're having a great winter!"
 
   } else if (season === "fall") {
     season_back = "bg-fall-pattern"
-    greeting = "HOPE YOU\'RE HAVING A GREAT FALL!"
+    greeting = "Hope you're having a great fall!"
 
   }
 
