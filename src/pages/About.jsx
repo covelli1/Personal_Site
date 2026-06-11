@@ -1,4 +1,12 @@
 import SectionHeading from '../Components/SectionHeading';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLocationDot, faGraduationCap, faBriefcase } from '@fortawesome/free-solid-svg-icons';
+
+const facts = [
+  { icon: faLocationDot,   label: 'Location',   value: 'San Francisco, CA' },
+  { icon: faGraduationCap, label: 'Education',  value: 'UC Irvine — B.S. Computer Science' },
+  { icon: faBriefcase,     label: 'Status',     value: 'Open to new opportunities' },
+];
 
 export default function About() {
   return (
@@ -20,37 +28,20 @@ export default function About() {
               Outside of software, you'll usually find me in the gym, exploring new hiking trails, watching basketball, or continuously learning new technologies. I believe growth comes from staying curious, taking on new challenges, and always finding ways to improve both professionally and personally.
             </p>
           </div>
-          <div className="flex flex-col gap-4">
-            <div className="flex items-center gap-3 text-gray-300">
-              <span className="text-teal-400 font-bold">▸</span>
-              UC Irvine — B.S. Computer Science
-            </div>
-            <div className="flex items-center gap-3 text-gray-300">
-              <span className="text-teal-400 font-bold">▸</span>
-              San Francisco, CA
-            </div>
-            <div className="flex items-center gap-3 text-gray-300">
-              <span className="text-teal-400 font-bold">▸</span>
-              Open to new opportunities
-            </div>
-            <div className="flex gap-4 mt-4">
-              <a
-                href="https://www.linkedin.com/in/vincentvannguyen/"
-                target="_blank"
-                rel="noreferrer"
-                className="text-teal-400 hover:text-teal-300 font-semibold text-sm transition-colors"
-              >
-                LinkedIn →
-              </a>
-              <a
-                href="https://github.com/covelli1"
-                target="_blank"
-                rel="noreferrer"
-                className="text-teal-400 hover:text-teal-300 font-semibold text-sm transition-colors"
-              >
-                GitHub →
-              </a>
-            </div>
+
+          <div className="bg-navy-light border border-white/10 rounded-xl p-8 flex flex-col gap-6">
+            <p className="text-xs uppercase tracking-widest text-gray-500">At a Glance</p>
+            {facts.map(({ icon, label, value }) => (
+              <div key={label} className="flex items-start gap-4">
+                <div className="w-9 h-9 rounded-lg bg-teal-400/10 flex items-center justify-center shrink-0">
+                  <FontAwesomeIcon icon={icon} className="text-teal-400 text-sm" />
+                </div>
+                <div>
+                  <p className="text-xs text-gray-500 uppercase tracking-widest mb-0.5">{label}</p>
+                  <p className="text-gray-200 text-sm font-medium">{value}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </div>
