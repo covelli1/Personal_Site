@@ -1,50 +1,34 @@
 import React from "react";
 
-import 'animate.css'
-
-
-function Body(props) {
-
-
+function Body() {
     return (
-        <div className="pt-20 ">
+        <div className="pt-20">
 
             <div className="flex flex-col items-center overflow-hidden">
-                <div className="flex text-center justify-center font-mono text-3xl pb-7 font-semibold animate__animated animate__zoomIn animate__delay-1s">
-
-                    {props.greeting}
-                </div>
-
-                <div className="flex text-center justify-center  pb-7 animate__animated animate__fadeInDown animate__delay-1s">
-                    <img src="./bitmoji_edit.png" alt="Vincent's avatar" width={300} height={300} />
-                </div>
-
-                <div className="flex text-center justify-center font-mono text-3xl pb-7 font-semibold animate__animated animate__fadeInUp animate__delay-1s">
+                <div className="flex text-center justify-center font-mono text-3xl pb-7 font-semibold">
                     Hey, I'm Vincent 👦✌️
                 </div>
 
-                
-
-                <div className="flex text-center justify-center font-mono font-extrabold text-5xl pb-7 w-2/5 animate__animated animate__bounceInUp animate__delay-1s">
+                <div className="flex text-center justify-center font-mono font-extrabold text-5xl pb-7 w-2/5">
                     Continuously learning and building software.
                 </div>
 
-                <div className="flex text-center justify-center font-mono text-2xl pb-8 max-w-3xl font-semibold animate__animated animate__fadeInUp animate__delay-1s">
+                <div className="flex text-center justify-center font-mono text-2xl pb-8 max-w-3xl font-semibold">
                     Currently open to new opportunities
                 </div>
 
-                <div className="flex text-center justify-center font-mono pb-12 animate__animated animate__fadeInUp animate__delay-1s">
+                <div className="flex text-center justify-center font-mono pb-12">
                     <a href="https://www.linkedin.com/in/vincentvannguyen/" target="_blank" className="mr-5 font-semibold font-mono border-4 border-black hover:text-white hover:bg-black p-3 text-xl">CONNECT WITH ME</a>
                 </div>
             </div>
 
             <div className="flex flex-col">
-                <div className="font-mono text-5xl pb-8 underline font-semibold flex text-center justify-center animate__animated animate__fadeIn animate__delay-2s">
+                <div className="font-mono text-5xl pb-8 underline font-semibold flex text-center justify-center">
                     SKILLS
                 </div>
 
                 <section className="text-black body-font pb-10">
-                    <div className="container mx-auto px-5 py-12 bg-amber-50 shadow-2xl rounded-md bg-opacity-70 animate__animated animate__fadeIn animate__delay-2s">
+                    <div className="container mx-auto px-5 py-12 bg-amber-50 shadow-2xl rounded-md bg-opacity-70">
                         <div className="flex flex-wrap justify-center gap-10 text-center font-mono">
                             <div>
                                 <p className="font-extrabold text-lg mb-2">Languages</p>
@@ -64,18 +48,18 @@ function Body(props) {
             </div>
 
             <div className="flex flex-col">
-                <div className="font-mono text-5xl pb-8 underline font-semibold flex text-center justify-center animate__animated animate__fadeIn animate__delay-2s">
+                <div className="font-mono text-5xl pb-8 underline font-semibold flex text-center justify-center">
                     PROJECTS
                 </div>
-                
+
                 <section className="text-black body-font pb-10">
                     <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center bg-amber-50 shadow-2xl rounded-md bg-opacity-70">
-                        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 animate__animated animate__fadeInLeft animate__delay-2s">
+                        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
                             <a href="https://kerry-charting.vercel.app/" target="_blank">
                                 <img className="object-cover object-center rounded" alt="Derm Chart app" src="./charting_app.png"/>
                             </a>
                         </div>
-                        <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center animate__animated animate__fadeInRight animate__delay-2s">
+                        <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
                             <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-black hover:bg-blue-300 p-3">
                                 <a href="https://kerry-charting.vercel.app/" target="_blank">
                                     DERM CHART
@@ -92,12 +76,12 @@ function Body(props) {
 
                 <section className="text-black body-font pb-10">
                     <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center bg-amber-50 shadow-2xl rounded-md bg-opacity-70">
-                        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0 animate__animated animate__fadeInLeft animate__delay-2s">
+                        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
                             <a href="https://vincent1-crm.vercel.app/" target="_blank">
                                 <img className="object-cover object-center rounded" alt="Job CRM app" src="./job_crm.png"/>
                             </a>
                         </div>
-                        <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center animate__animated animate__fadeInRight animate__delay-2s">
+                        <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
                             <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-black hover:bg-green-300 p-3">
                                 <a href="https://vincent1-crm.vercel.app/" target="_blank">
                                     JOB CRM
@@ -113,11 +97,8 @@ function Body(props) {
                 </section>
             </div>
 
-            
-
         </div>
     )
-
 }
 
 export default Body;
