@@ -4,13 +4,6 @@ import 'animate.css'
 
 
 function Body(props) {
-    const emoji = require("emoji-dictionary");
-    let body_text_color = null
-
-
-    if(props.season === "summer") {
-        body_text_color = "text-black"
-    }
 
 
     return (
@@ -23,12 +16,11 @@ function Body(props) {
                 </div>
 
                 <div className="flex text-center justify-center  pb-7 animate__animated animate__fadeInDown animate__delay-1s">
-                    <img src="./bitmoji_edit.png"  width={300} height={300}></img> 
+                    <img src="./bitmoji_edit.png" alt="Vincent's avatar" width={300} height={300} />
                 </div>
 
                 <div className="flex text-center justify-center font-mono text-3xl pb-7 font-semibold animate__animated animate__fadeInUp animate__delay-1s">
-                    
-                    Hey, I'm Vincent {emoji.getUnicode("boy")}{emoji.getUnicode("v")}
+                    Hey, I'm Vincent 👦✌️
                 </div>
 
                 

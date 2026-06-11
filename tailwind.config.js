@@ -1,13 +1,13 @@
 /** @type {import('tailwindcss').Config} */ 
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./index.html", "./src/**/*.{js,jsx}"],
   theme: {
     extend: {
       backgroundImage: {
-        'summer-pattern': "url('./../public/summer.jpg')",
-        'spring-pattern': "url('./../public/spring.jpg')",
-        'winter-pattern': "url('./../public/winter.jpg')",
-        'fall-pattern': "url('./../public/fall.jpg')",
+        'summer-pattern': "url('/Personal_Site/summer.jpg')",
+        'spring-pattern': "url('/Personal_Site/spring.jpg')",
+        'winter-pattern': "url('/Personal_Site/winter.jpg')",
+        'fall-pattern': "url('/Personal_Site/fall.jpg')",
       },
     }
   }
