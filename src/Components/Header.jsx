@@ -10,7 +10,6 @@ const navLinks = [
   { label: 'Projects',   href: '#projects' },
 ];
 
-const resumeUrl = `${import.meta.env.BASE_URL}Vincent_Resume_2026.pdf`;
 
 function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -19,9 +18,13 @@ function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-navy/80 backdrop-blur-sm border-b border-white/10">
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center gap-10">
 
-        <span className="text-xl font-bold bg-gradient-to-r from-teal-400 to-cyan-300 bg-clip-text text-transparent shrink-0">
-          Vincent Nguyen
-        </span>
+        <a href="#home">
+          <img
+            src={`${import.meta.env.BASE_URL}personal-icon.png`}
+            alt="Vincent Nguyen"
+            className="w-10 h-10 rounded-full object-cover shrink-0"
+          />
+        </a>
 
         <nav className="hidden md:flex items-center gap-8">
           {navLinks.map(link => (
@@ -37,12 +40,10 @@ function Header() {
 
         <div className="ml-auto flex items-center gap-4">
           <a
-            href={resumeUrl}
-            target="_blank"
-            rel="noreferrer"
+            href="mailto:vincent.nguyen3325@gmail.com"
             className="hidden md:block bg-teal-400 hover:bg-teal-300 text-navy font-semibold text-sm px-4 py-2 rounded transition-colors duration-200"
           >
-            Resume
+            Contact Me
           </a>
           <button
             className="md:hidden text-gray-300 hover:text-white transition-colors"
@@ -67,12 +68,10 @@ function Header() {
             </a>
           ))}
           <a
-            href={resumeUrl}
-            target="_blank"
-            rel="noreferrer"
+            href="mailto:vincent.nguyen3325@gmail.com"
             className="bg-teal-400 hover:bg-teal-300 text-navy font-semibold text-sm px-4 py-2 rounded transition-colors text-center"
           >
-            Resume
+            Contact Me
           </a>
         </div>
       )}

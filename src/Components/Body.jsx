@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faDownload } from '@fortawesome/free-solid-svg-icons';
 
 const resumeUrl = `${import.meta.env.BASE_URL}Vincent_Resume_2026.pdf`;
 const baseUrl = import.meta.env.BASE_URL;
@@ -107,7 +109,7 @@ function Body() {
               rel="noreferrer"
               className="border border-white/30 hover:border-teal-400 hover:text-teal-400 text-white font-semibold px-8 py-3 rounded transition-colors duration-200"
             >
-              Download Resume ↓
+              Download Resume <FontAwesomeIcon icon={faDownload} className="ml-1" />
             </a>
           </div>
         </div>
