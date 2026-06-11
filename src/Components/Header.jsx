@@ -1,29 +1,83 @@
-import React from "react";
+import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 
-import "@fortawesome/fontawesome-svg-core";
-import {faEnvelope} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+const navLinks = [
+  { label: 'Home',       href: '#home' },
+  { label: 'About',      href: '#about' },
+  { label: 'Skills',     href: '#skills' },
+  { label: 'Experience', href: '#experience' },
+  { label: 'Projects',   href: '#projects' },
+];
 
-import 'animate.css';
+const resumeUrl = `${import.meta.env.BASE_URL}Vincent_Resume_2026.pdf`;
 
 function Header() {
-    return(
-        <header className="">
-        <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center overflow-hidden">
-            <div className="hover:bg-orange-300 p-3 animate__animated animate__fadeInLeft">
-                <FontAwesomeIcon icon={faEnvelope} className=""/>
-                <a href="mailto:vincent.nguyen3325@gmail.com" className="mr-5  pl-3 font-mono text-xl font-semibold">vincent.nguyen3325@gmail.com</a>
-            </div>
+  const [menuOpen, setMenuOpen] = useState(false);
 
-            <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center animate__animated animate__fadeInRight">
-                <a href="https://www.linkedin.com/in/vincentvannguyen/" target="_blank" className="mr-5 font-semibold hover:text-gray-900 font-mono hover:bg-green-300 p-3 text-xl">LINKEDIN</a>
-                <a href="https://github.com/covelli1" target="_blank" className="mr-5 font-semibold hover:text-gray-900 font-mono hover:bg-amber-300 p-3 text-xl">GITHUB</a>
-                <a href="/Vincent_Resume_2026.pdf" target="_blank" className="mr-5 font-semibold hover:text-gray-900 font-mono hover:bg-blue-300 p-3 text-xl">RESUME</a>
-            </nav>
-            
+  return (
+    <header className="fixed top-0 left-0 right-0 z-50 bg-navy/80 backdrop-blur-sm border-b border-white/10">
+      <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+
+        <span className="text-xl font-bold bg-gradient-to-r from-teal-400 to-cyan-300 bg-clip-text text-transparent">
+          Vincent Nguyen
+        </span>
+
+        <nav className="hidden md:flex items-center gap-8">
+          {navLinks.map(link => (
+            <a
+              key={link.label}
+              href={link.href}
+              className="text-gray-300 hover:text-teal-400 transition-colors duration-200 text-sm font-medium"
+            >
+              {link.label}
+            </a>
+          ))}
+        </nav>
+
+        <div className="flex items-center gap-4">
+          <a
+            href={resumeUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="hidden md:block bg-teal-400 hover:bg-teal-300 text-navy font-semibold text-sm px-4 py-2 rounded transition-colors duration-200"
+          >
+            Resume
+          </a>
+          <button
+            className="md:hidden text-gray-300 hover:text-white transition-colors"
+            onClick={() => setMenuOpen(prev => !prev)}
+            aria-label="Toggle menu"
+          >
+            <FontAwesomeIcon icon={menuOpen ? faXmark : faBars} size="lg" />
+          </button>
         </div>
-        </header>
-    )
+      </div>
+
+      {menuOpen && (
+        <div className="md:hidden bg-navy-light border-t border-white/10 px-6 py-4 flex flex-col gap-4">
+          {navLinks.map(link => (
+            <a
+              key={link.label}
+              href={link.href}
+              className="text-gray-300 hover:text-teal-400 transition-colors font-medium"
+              onClick={() => setMenuOpen(false)}
+            >
+              {link.label}
+            </a>
+          ))}
+          <a
+            href={resumeUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="bg-teal-400 hover:bg-teal-300 text-navy font-semibold text-sm px-4 py-2 rounded transition-colors text-center"
+          >
+            Resume
+          </a>
+        </div>
+      )}
+    </header>
+  );
 }
 
 export default Header;
