@@ -1,26 +1,43 @@
 import React from "react";
 
+const resumeUrl = `${import.meta.env.BASE_URL}Vincent_Resume_2026.pdf`;
+
 function Body() {
     return (
-        <div className="pt-20">
+        <div>
 
-            <div className="flex flex-col items-center overflow-hidden">
-                <div className="flex text-center justify-center font-mono text-3xl pb-7 font-semibold">
-                    Hey, I'm Vincent 👦✌️
+            {/* Hero */}
+            <section id="home" className="min-h-screen flex items-center justify-center px-6">
+                <div className="text-center max-w-3xl mx-auto">
+                    <p className="text-teal-400 font-semibold text-lg tracking-widest uppercase mb-4">
+                        Software Engineer
+                    </p>
+                    <h1 className="text-5xl md:text-7xl font-bold mb-6">
+                        <span className="bg-gradient-to-r from-teal-400 via-cyan-300 to-blue-400 bg-clip-text text-transparent">
+                            Vincent Nguyen
+                        </span>
+                    </h1>
+                    <p className="text-gray-400 text-lg md:text-xl mb-10 max-w-xl mx-auto">
+                        Building tools that make a difference — Python, TypeScript, React
+                    </p>
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                        <a
+                            href="#projects"
+                            className="bg-teal-400 hover:bg-teal-300 text-navy font-semibold px-8 py-3 rounded transition-colors duration-200"
+                        >
+                            View Projects →
+                        </a>
+                        <a
+                            href={resumeUrl}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="border border-white/30 hover:border-teal-400 hover:text-teal-400 text-white font-semibold px-8 py-3 rounded transition-colors duration-200"
+                        >
+                            Download Resume ↓
+                        </a>
+                    </div>
                 </div>
-
-                <div className="flex text-center justify-center font-mono font-extrabold text-5xl pb-7 w-2/5">
-                    Continuously learning and building software.
-                </div>
-
-                <div className="flex text-center justify-center font-mono text-2xl pb-8 max-w-3xl font-semibold">
-                    Currently open to new opportunities
-                </div>
-
-                <div className="flex text-center justify-center font-mono pb-12">
-                    <a href="https://www.linkedin.com/in/vincentvannguyen/" target="_blank" className="mr-5 font-semibold font-mono border-4 border-black hover:text-white hover:bg-black p-3 text-xl">CONNECT WITH ME</a>
-                </div>
-            </div>
+            </section>
 
             <div className="flex flex-col">
                 <div className="font-mono text-5xl pb-8 underline font-semibold flex text-center justify-center">

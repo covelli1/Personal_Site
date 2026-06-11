@@ -1,5 +1,6 @@
 import Header from './Components/Header';
 import Body from './Components/Body';
+import Footer from './Components/Footer';
 import ParticleBackground from './Components/ParticleBackground';
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <div className="relative z-10 flex flex-col min-h-screen">
         <Header />
         <Body />
+        <Footer />
       </div>
     </div>
   );
