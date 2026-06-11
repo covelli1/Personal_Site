@@ -1,10 +1,16 @@
+import { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 import { skills } from '../data';
 
 export default function Home() {
+  useEffect(() => {
+    document.body.style.overflow = 'hidden';
+    return () => { document.body.style.overflow = ''; };
+  }, []);
+
   return (
-    <section className="min-h-screen flex items-center justify-center px-6">
+    <section className="h-screen flex items-center justify-center px-6">
       <div className="text-center max-w-3xl mx-auto">
         <p className="text-teal-400 font-semibold text-lg tracking-widest uppercase mb-4">
           Full Stack Software Engineer
@@ -14,12 +20,12 @@ export default function Home() {
             Vincent Nguyen
           </span>
         </h1>
-        <p className="text-gray-400 text-lg md:text-xl mb-8 max-w-xl mx-auto">
+        <p className="text-gray-400 text-lg md:text-xl mb-6 max-w-xl mx-auto">
           Building tools that make a difference
         </p>
 
-        <p className="text-gray-500 text-sm uppercase tracking-widest mb-4">Skills</p>
-        <div className="flex flex-col gap-4 mb-10">
+        <p className="text-gray-500 text-sm uppercase tracking-widest mb-3">Skills</p>
+        <div className="flex flex-col gap-2 mb-8">
           {Object.entries(skills).map(([category, items]) => (
             <div key={category} className="flex flex-wrap justify-center gap-2">
               {items.map(skill => (

@@ -6,14 +6,18 @@ export default function About() {
       <div className="max-w-6xl mx-auto w-full">
         <SectionHeading>About</SectionHeading>
         <div className="grid md:grid-cols-2 gap-12 items-start">
-          <div>
-            <p className="text-gray-300 text-lg leading-relaxed mb-5">
-              I'm a software engineer with experience building internal tools, monitoring dashboards,
-              and data infrastructure at biotech companies. I enjoy turning complex problems into
-              clean, maintainable solutions that teams actually rely on.
+          <div className="flex flex-col gap-5">
+            <p className="text-gray-300 text-lg leading-relaxed">
+              I'm a Full Stack Software Engineer based in San Francisco with experience building internal tools, AI powered applications, and scalable web platforms.
             </p>
             <p className="text-gray-300 text-lg leading-relaxed">
-              Currently open to new opportunities where I can keep building impactful software.
+              Over the past few years, I've worked closely with scientists, stakeholders, and engineering teams to develop products that improve workflows and solve real world problems. My experience spans everything from monitoring dashboards and data infrastructure to AI driven tools that help users work more efficiently.
+            </p>
+            <p className="text-gray-300 text-lg leading-relaxed">
+              I enjoy turning complex ideas into simple, intuitive software and am most energized when building products from concept to production. My primary stack includes React, TypeScript, Python, FastAPI, Flask, PostgreSQL, and Docker.
+            </p>
+            <p className="text-gray-300 text-lg leading-relaxed">
+              Outside of software, you'll usually find me in the gym, exploring new hiking trails, watching basketball, or continuously learning new technologies. I believe growth comes from staying curious, taking on new challenges, and always finding ways to improve both professionally and personally.
             </p>
           </div>
           <div className="flex flex-col gap-4">

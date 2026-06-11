@@ -14,7 +14,7 @@ function App() {
         <ParticleBackground />
         <div className="relative z-10 flex flex-col min-h-screen">
           <Header />
-          <main className="flex-1">
+          <main className="flex-1 pb-16">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
