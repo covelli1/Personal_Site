@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Analytics } from '@vercel/analytics/react';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 import ParticleBackground from './Components/ParticleBackground';
@@ -25,6 +26,7 @@ function App() {
           <Footer />
         </div>
       </div>
+      <Analytics />
     </BrowserRouter>
   );
 }
