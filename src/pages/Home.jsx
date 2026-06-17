@@ -48,7 +48,7 @@ export default function Home() {
             View Projects →
           </a>
           <a
-            href="/Vincent_Resume_2026.pdf"
+            href="/Vincent_Resume.pdf"
             target="_blank"
             rel="noreferrer"
             className="border border-white/30 hover:border-teal-400 hover:text-teal-400 text-white font-semibold px-8 py-3 rounded transition-colors duration-200"
